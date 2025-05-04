@@ -1,36 +1,124 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Shop Now - Modern E-commerce Platform
+
+A modern, responsive e-commerce platform built with Next.js, TypeScript, and Tailwind CSS. This project showcases a beautiful UI with smooth animations, responsive design, and a great user experience.
+
+## Features
+
+### 🛍️ Product Management
+- Product listing with filtering and sorting
+- Detailed product pages
+- Product categories and tags
+- Price range filtering
+- Rating-based filtering
+- Search functionality
+
+### 🎨 UI/UX Features
+- Responsive design for all screen sizes
+- Beautiful animations and transitions
+- Dark mode theme
+- Interactive product cards
+- Image carousel for product galleries
+- Star rating system
+- Loading states and skeletons
+
+### 🔍 Search & Filtering
+- Real-time search functionality
+- Category-based filtering
+- Price range filtering
+- Rating-based filtering
+- Sort by price and release date
+- Related products suggestions
+
+### 🛒 User Experience
+- Protected routes for authenticated users
+- Smooth navigation between pages
+- Back button functionality
+- Responsive layouts
+- Loading states
+- Error handling
+
+## Tech Stack
+
+- **Framework:** Next.js 14
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Icons:** Tabler Icons, Lucide React
+- **HTTP Client:** Axios
+- **State Management:** React Hooks
+- **Routing:** Next.js App Router
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18+ 
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/shop-now.git
+cd shop-now
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+shop-now/
+├── app/
+│   ├── components/     # Reusable UI components
+│   ├── landing-page/   # Landing page components
+│   ├── products/       # Product-related pages
+│   ├── login/         # Authentication pages
+│   ├── signup/        # Authentication pages
+│   ├── services/      # API services
+│   └── globals.css    # Global styles
+├── public/            # Static assets
+└── package.json       # Project dependencies
+```
 
-## Learn More
+## Key Components
 
-To learn more about Next.js, take a look at the following resources:
+- `ProductCard`: Displays product information in a card format
+- `ProductTrendingCard`: Specialized card for trending products
+- `FeaturedProductsSection`: Reusable section for featured products
+- `ProductCarousel`: Image carousel for product galleries
+- `ProductFilters`: Filtering and sorting controls
+- `Topbar`: Navigation and search bar
+- `Footer`: Site footer
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## API Integration
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The project uses the DummyJSON API for product data:
+- Product listing: `https://dummyjson.com/products`
+- Product details: `https://dummyjson.com/products/{id}`
+- Category-based products: `https://dummyjson.com/products/category/{category}`
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Acknowledgments
+
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [DummyJSON](https://dummyjson.com/)
+- [Tabler Icons](https://tabler-icons.io/)
+- [Lucide React](https://lucide.dev/)
